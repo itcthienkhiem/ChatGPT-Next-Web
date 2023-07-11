@@ -105,7 +105,7 @@ const loadAsyncGoogleFont = () => {
   linkEl.rel = "stylesheet";
   linkEl.href =
     googleFontUrl +
-    "/css2?family=Noto+Sans+SC:wght@300;400;700;900&display=swap";
+    "/css2?family=Open+Sans:wght@300;400;700;900&display=swap";
   document.head.appendChild(linkEl);
 };
 
