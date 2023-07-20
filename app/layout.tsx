@@ -36,10 +36,7 @@ export default function RootLayout({
         <script src="/serviceWorkerRegister.js" defer></script>
       </head>
       <body>
-      <div>
-          {children}
-          <footer style={{textAlign:'center',marginTop: 5}}>Create by Nguyễn Thiện Khiêm</footer>
-      </div>
+       {children}
       </body>
 
     </html>
