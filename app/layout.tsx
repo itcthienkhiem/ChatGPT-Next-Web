@@ -35,8 +35,11 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest"></link>
         <script src="/serviceWorkerRegister.js" defer></script>
       </head>
-      <body>{children}
-      <p>nguyen van a</p>
+      <body>
+      <div>
+          {children}
+          <footer>Create by Nguyễn Thiện Khiêm</footer>
+      </div>
       </body>
 
     </html>
