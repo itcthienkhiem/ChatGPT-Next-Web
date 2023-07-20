@@ -38,7 +38,7 @@ export default function RootLayout({
       <body>
       <div>
           {children}
-          <footer>Create by Nguyễn Thiện Khiêm</footer>
+          <footer style="text-align:center; margin-top: 5px">Create by Nguyễn Thiện Khiêm</footer>
       </div>
       </body>
 
