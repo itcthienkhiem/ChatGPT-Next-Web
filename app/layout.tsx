@@ -33,7 +33,6 @@ export default function RootLayout({
       <head>
         <meta name="config" content={JSON.stringify(getClientConfig())} />
         <link rel="manifest" href="/site.webmanifest"></link>
-        <script src="/serviceWorkerRegister.js" defer></script>
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-46FWPBCYRB"></script>
         <script>
@@ -43,6 +42,8 @@ export default function RootLayout({
 
           gtag('config', 'G-46FWPBCYRB');
         </script>
+        <script src="/serviceWorkerRegister.js" defer></script>
+
       </head>
       <body>
        {children}
