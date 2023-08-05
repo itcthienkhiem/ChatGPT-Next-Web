@@ -35,17 +35,9 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest"></link>
 
         <script src="/serviceWorkerRegister.js" defer></script>
-        <!-- Google tag (gtag.js) -->
 
       </head>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-46FWPBCYRB"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
 
-          gtag('config', 'G-46FWPBCYRB');
-        </script>
       <body>
        {children}
       </body>
