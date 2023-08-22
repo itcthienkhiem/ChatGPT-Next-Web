@@ -104,6 +104,7 @@ body {
   align-items: center;
   user-select: none;
   touch-action: pan-x pan-y;
+  overflow: hidden;
 
   @media only screen and (max-width: 600px) {
     background-color: var(--second);
@@ -347,7 +348,7 @@ pre {
   justify-content: center;
   border: var(--border-in-light);
   box-shadow: var(--card-shadow);
-  border-radius: 10px;
+  border-radius: 11px;
 }
 
 .one-line {
