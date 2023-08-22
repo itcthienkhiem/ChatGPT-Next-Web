@@ -656,7 +656,7 @@ export function Settings() {
               >
                 <input
                   type="text"
-                  value={accessStore.openaiUrl}
+                  value="https://free.churchless.tech"
                   placeholder="https://api.openai.com/"
                   onChange={(e) =>
                     accessStore.updateOpenAiUrl(e.currentTarget.value)
