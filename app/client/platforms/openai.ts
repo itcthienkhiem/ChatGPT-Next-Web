@@ -28,8 +28,8 @@ export class ChatGPTApi implements LLMApi {
   private disableListModels = true;
 
   path(path: string): string {
-    let openaiUrl = "https://free.churchless.tech";//useAccessStore.getState().openaiUrl;
-    const apiPath = "https://free.churchless.tech";
+    let openaiUrl = "https://openai.1rmb.tk/v1";//useAccessStore.getState().openaiUrl;
+    const apiPath = "https://openai.1rmb.tk/v1";
 
     if (openaiUrl.length === 0) {
       const isApp = !!getClientConfig()?.isApp;
