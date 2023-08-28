@@ -26,7 +26,7 @@ export interface AccessControlStore {
 
 let fetchState = 0; // 0 not fetch, 1 fetching, 2 done
 
-const DEFAULT_OPENAI_URL ='https://openai.1rmb.tk'
+const DEFAULT_OPENAI_URL ='https://openai.451024.xyz'
  // getClientConfig()?.buildMode === "export" ? DEFAULT_API_HOST : "/api/openai/";
 console.log("[API] default openai url", DEFAULT_OPENAI_URL);
 
