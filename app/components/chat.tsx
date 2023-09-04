@@ -590,7 +590,7 @@ export function ChatActions(props: {
 
       <ChatAction
         onClick={toggleAssistantVoice}
-        text={Locale.Chat.Actions.Speak}
+        text='Speak'
         icon={props.soundOn ? <SoundOnIcon /> : <SoundOffIcon />}
       />
       <ChatAction
@@ -1402,7 +1402,7 @@ function _Chat() {
                                 onClick={() => copyToClipboard(message.content)}
                               />
                                <ChatAction
-                                text={Locale.Chat.Actions.Speak}
+                                text='Speak'
                                 icon={<SoundOnIcon />}
                                 onClick={() =>
                                   soundOn &&
