@@ -294,9 +294,7 @@ const en: LocaleType = {
     Clear: "Context Cleared",
     Revert: "Revert",
   },
-  Voice: {
-    Edit: "Voice Preference",
-  },
+
   Plugin: {
     Name: "Plugin",
   },
