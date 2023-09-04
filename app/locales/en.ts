@@ -263,7 +263,7 @@ const en: LocaleType = {
       SubTitle:
         "A larger value increases the likelihood to talk about new topics",
     },
-    Voice: "Voice",
+
     FrequencyPenalty: {
       Title: "Frequency Penalty",
       SubTitle:
