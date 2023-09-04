@@ -997,8 +997,8 @@ function _Chat() {
       !latestMessage.streaming
     ) {
       const ttsConfig = session.ttsConfig || {
-        voice: "Google US English",
-        lang: "en-US",
+        voice: "Google Vietnamese",
+        lang: 'vi-VN',
       };
       soundOn &&
         speak(messages[messages.length - 1].content, session.ttsConfig?.voice);
