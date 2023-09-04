@@ -1,17 +1,14 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
-import {
-  DEFAULT_CONFIG,
-  ModelConfig,
-  ModelType,
-  useAppConfig,
-  VoiceConfig,
-} from "./config";
 import { trimTopic } from "../utils";
 
 import Locale, { getLang } from "../locales";
 import { showToast } from "../components/ui-lib";
-import { ModelConfig, ModelType, useAppConfig } from "./config";
+import { DEFAULT_CONFIG,
+  ModelConfig,
+  ModelType,
+  useAppConfig,
+  VoiceConfig, } from "./config";
 import { createEmptyMask, Mask } from "./mask";
 import {
   DEFAULT_INPUT_TEMPLATE,
