@@ -1,6 +1,12 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
-
+import {
+  DEFAULT_CONFIG,
+  ModelConfig,
+  ModelType,
+  useAppConfig,
+  VoiceConfig,
+} from "./config";
 import { trimTopic } from "../utils";
 
 import Locale, { getLang } from "../locales";
@@ -54,6 +60,7 @@ export interface ChatSession {
   clearContextIndex?: number;
 
   mask: Mask;
+  ttsConfig: VoiceConfig;
 }
 
 export const DEFAULT_TOPIC = Locale.Store.DefaultTopic;
@@ -77,6 +84,10 @@ function createEmptySession(): ChatSession {
     lastSummarizeIndex: 0,
 
     mask: createEmptyMask(),
+     ttsConfig: {
+      voice: "Google US English",
+      lang: "en-US",
+    },
   };
 }
 
@@ -261,7 +272,12 @@ export const useChatStore = create<ChatStore>()(
         }
 
         const session = sessions[index];
-
+        if (!session.ttsConfig || session.ttsConfig.voice === "") {
+                  session.ttsConfig = {
+                    voice: "Google US English",
+                    lang: "en-US",
+                  };
+                }
         return session;
       },
 
@@ -477,7 +493,14 @@ export const useChatStore = create<ChatStore>()(
           session.memoryPrompt = "";
         });
       },
-
+      resetTTSConfig() {
+            get().updateCurrentSession((session) => {
+              session.ttsConfig = {
+                voice: "Google US English",
+                lang: "en-US",
+              };
+            });
+          },
       summarizeSession() {
         const config = useAppConfig.getState();
         const session = get().currentSession();
