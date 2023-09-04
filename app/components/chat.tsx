@@ -170,7 +170,7 @@ export function TTSConfigModel(props: {
   return (
     <div className="modal-mask">
       <Modal
-        title={Locale.Voice.Edit}
+        title="Voice"
         onClose={() => props.onClose()}
         actions={[
           <IconButton
