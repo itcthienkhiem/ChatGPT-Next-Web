@@ -213,7 +213,7 @@ const TTSConfig = (props: {
   return (
     <>
       <List>
-        <ListItem title={Locale.Settings.Voice}>
+        <ListItem title="Voice">
           <select
             value={props.ttsConfig.voice}
             onChange={(e) => {
