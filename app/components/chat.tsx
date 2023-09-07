@@ -37,7 +37,7 @@ import RobotIcon from "../icons/robot.svg";
 import MicrophoneIcon from "../icons/microphone.svg";
 import SoundOnIcon from "../icons/sound-on.svg";
 import SoundOffIcon from "../icons/sound-off.svg";
-import { client, GradioClientInterface } from "@gradio/client";
+//import { client, GradioClientInterface } from "@gradio/client";
 
 import {
   ChatMessage,
@@ -98,12 +98,12 @@ import { getClientConfig } from "../config/client";
 const Markdown = dynamic(async () => (await import("./markdown")).Markdown, {
   loading: () => <LoadingIcon />,
 });
-async function predictText(inputText: string[]): Promise<void> {
+/*async function predictText(inputText: string[]): Promise<void> {
   const app: GradioClientInterface = await client("https://ntt123-vietnam-male-voice-tts.hf.space/");
   const result = await app.predict("/predict", inputText);
 
   console.log(result.data);
-}
+}*/
 
 export function SessionConfigModel(props: { onClose: () => void }) {
   const chatStore = useChatStore();
