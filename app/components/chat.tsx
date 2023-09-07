@@ -1168,8 +1168,8 @@ function _Chat() {
           }
         });
       }
-      const input = ["Howdy!"]; // string in 'text' Textbox component
-      predictText(input).catch(e => console.log(e));
+      //const input = ["Howdy!"]; // string in 'text' Textbox component
+      //predictText(input).catch(e => console.log(e));
 
       const filteredTextChunks = textChunks.filter((chunk) => chunk.length > 0);
 
