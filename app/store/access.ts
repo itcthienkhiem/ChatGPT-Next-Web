@@ -27,7 +27,7 @@ export interface AccessControlStore {
 let fetchState = 0; // 0 not fetch, 1 fetching, 2 done
 
 const DEFAULT_OPENAI_URL =//'https://api.analogai.in'
- getClientConfig()?.buildMode === "export" ? DEFAULT_API_HOST : "https://chatf.aifree.site";
+ getClientConfig()?.buildMode === "export" ? DEFAULT_API_HOST : "https://v.chatfree.cc";
 console.log("[API] default openai url", DEFAULT_OPENAI_URL);
 
 export const useAccessStore = create<AccessControlStore>()(
